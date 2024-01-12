@@ -1,0 +1,38 @@
+@use "../util" as u;
+
+header{
+    background-color: var(--color-dk-purple);
+   color: var(--color-white);
+   padding-block: 32px 64px;
+   @include u.breakpoint(large){
+    padding-block: 56px;
+   }
+
+   .header__wrapper{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   
+   }
+   .header__logo{
+    width:u.rem(96) ;
+    height: auto;
+   } 
+   .header__link{
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    text-decoration-color: var(--color-green);
+    transition: color 200ms ease-in-out;
+    &:hover{
+        color: var(--color-green);
+    }
+    
+    }
+}
+
+
+
+   
+
