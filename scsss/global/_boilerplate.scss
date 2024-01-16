@@ -7,6 +7,8 @@ body{
     font-family: 'Manrope',Arial, Helvetica, sans-serif;
     line-height: 1.7;
     font-size: clamp(u.rem(16), 0.9353448275862069rem + 0.27586206896551724vw, u.rem(18));
+    overflow-x: hidden;
+    padding-block-end: 50vh;
 }
 h1,h2,h3,p{
     margin: 0;
@@ -28,4 +30,17 @@ a,a:visited,a:active{
     width: min(100% -
     u.rem(32),u.rem(1110));
     margin-inline: auto;
+}
+.curved{
+    position: relative;
+    &::after {
+          
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url(/assets/images/curved-hero-bottom.svg);
+        inset: 40.8% 0 0 0;
+        background-size: 100% 100%;
+
+    }
 }
