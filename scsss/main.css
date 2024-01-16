@@ -90,6 +90,7 @@ header {
 @media (min-width: 56.25em) {
   header {
     padding-block: 56px;
+    background-size: cover;
   }
 }
 header .header__wrapper {
@@ -141,7 +142,6 @@ header .header__link:hover {
 .hero::after {
   width: 8.125rem;
   height: 8.4375rem;
-  translate: 25% 22%;
   right: 0;
   bottom: 0;
   background-image: url(/assets/images/bg-pattern-2.svg);
@@ -157,7 +157,7 @@ header .header__link:hover {
 }
 .hero .hero__image-wrapper {
   width: 100%;
-  height: 15vh;
+  height: 5vw;
   position: absolute;
   left: 0;
   right: 0;
@@ -169,7 +169,7 @@ header .header__link:hover {
   position: absolute;
   background-repeat: no-repeat;
   background-image: url(/assets/images/curved-hero-bottom.svg);
-  inset: 50% 0 0 0;
+  inset: 30% 0 0 0;
   background-size: 100% 100%;
 }
 .hero .hero__image {

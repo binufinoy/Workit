@@ -6,6 +6,7 @@ header{
    padding-block: 32px 64px;
    @include u.breakpoint(large){
     padding-block: 56px;
+    background-size: cover;
    }
 
    .header__wrapper{

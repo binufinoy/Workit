@@ -1,79 +1,84 @@
 @use "../util" as u;
-.hero{
+
+.hero {
     background-color: var(--color-dk-purple);
-   
+
     text-align: center;
     position: relative;
-    &::before,&::after{
+
+    &::before,
+    &::after {
         content: "";
-      
+
         background-size: contain;
         background-repeat: no-repeat;
         display: block;
         position: absolute;
-        @include u.breakpoint-down(small){
+
+        @include u.breakpoint-down(small) {
             display: none;
         }
     }
-    &::before{
-       
+
+    &::before {
+
         top: 0;
         left: 0;
         translate: -35% 0;
         background-image: url(/assets/images/bg-pattern-1.svg);
         width: u.rem(270);
         height: u.rem(217);
-       
-   
+
+
     }
-    &::after{
+
+    &::after {
         width: u.rem(130);
         height: u.rem(135);
-        translate: 25% 22%;
+        // translate: 5% 22%;
         right: 0;
         bottom: 0;
         background-image: url(/assets/images/bg-pattern-2.svg);
-       
-    }
-    
-
-      
-    .hero__wrapper{
 
     }
-    .hero__headline{
-     color: var(--color-white);
-     margin-block-end: u.rem(40);
-     max-width: 11ch;
-    margin-inline: auto;
+
+    .hero__headline {
+        color: var(--color-white);
+        margin-block-end: u.rem(40);
+        max-width: 11ch;
+        margin-inline: auto;
     }
-    .hero__button{
+
+    .hero__button {
         margin-block-end: u.rem(40);
     }
-    .hero__image-wrapper{
-         width: 100%;
-         height:15vh;
+
+    .hero__image-wrapper {
+        width: 100%;
+        height: 5vw;
         position: absolute;
         left: 0;
         right: 0;
-        background-image: linear-gradient(var(--color-dk-purple)50%,var(--color-white)50%);
+        background-image: linear-gradient(var(--color-dk-purple)50%, var(--color-white)50%);
         padding-inline: 32px;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             background-repeat: no-repeat;
             background-image: url(/assets/images/curved-hero-bottom.svg);
-            inset: 50% 0 0 0;
-          background-size: 100% 100%;
-          
+            inset: 30% 0 0 0;
+            background-size: 100% 100%;
+
         }
-        
+
 
     }
-    .hero__image{
- position: relative;
- z-index: 1;
-   margin-inline: auto;
+
+    .hero__image {
+        position: relative;
+        z-index: 1;
+        margin-inline: auto;
 
     }
 }
