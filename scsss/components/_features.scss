@@ -1,12 +1,13 @@
 @use "../util" as u;
 .features{
-   
+    background-color: var(--color-lt-gray);
     .feature__wrapper{
         padding-block-start: 
         clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
         padding-block-end: 
-         clamp(4.375rem, 1.1422413793103448rem + 13.793103448275861vw, 10.625rem);;
-      
+       
+       clamp(2.5rem, 1.25rem + 6.25vw, 8.75rem);;
+       
         
     display: grid;
     gap:40px  26px;
@@ -50,15 +51,6 @@ align-self: center;
     height:u.rem(56) ;
 }
     }
-    .features__item-title{
-
-    }
-    .features__item-description{
-
-    }
-    .feature__curved{
-    &::after{
-        background-image: url(/assets/images/curved-hero-bottom-light.svg);
-    }
-    }
+   
+    
 }

@@ -40,7 +40,11 @@ a,a:visited,a:active{
         background-repeat: no-repeat;
         background-image: url(/assets/images/curved-hero-bottom.svg);
         inset: 40.8% 0 0 0;
-        background-size: 100% 100%;
+        background-size: 100% 50%;
 
+    }
+    &.light{
+        &::after{background-image: url(/assets/images/curved-hero-bottom-light.svg);
+        }
     }
 }

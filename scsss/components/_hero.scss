@@ -56,21 +56,11 @@
     .hero__curved {
        
        
-       position: relative;
-        background-image: linear-gradient(var(--color-dk-purple)50%, var(--color-white)50%);
+       
+        background-image: linear-gradient(var(--color-dk-purple)50%, var(  --color-lt-gray)50%);
         padding-inline: 32px;
 
-        &::after {
-          
-            content: "";
-            position: absolute;
-            background-repeat: no-repeat;
-            background-image: url(/assets/images/curved-hero-bottom.svg);
-            inset: 40.8% 0 0 0;
-            background-size: 100% 50%;
-
-        }
-
+       
 
     }
 
