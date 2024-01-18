@@ -15,7 +15,7 @@
         @include u.breakpoint(large){
             grid-template-rows: auto u.rem(173) auto auto;
         grid-template-columns: auto u.rem(95) auto;
-       
+       padding-block-end: 120px;
         }
     }
     .cta__image{

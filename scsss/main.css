@@ -8,7 +8,6 @@ body {
   line-height: 1.7;
   font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
   overflow-x: hidden;
-  padding-block-end: 50vh;
 }
 
 h1, h2, h3, p {
@@ -276,6 +275,7 @@ header .header__link:hover {
   .cta .cta__wrapper {
     grid-template-rows: auto 10.8125rem auto auto;
     grid-template-columns: auto 5.9375rem auto;
+    padding-block-end: 120px;
   }
 }
 .cta .cta__image {
@@ -329,6 +329,37 @@ header .header__link:hover {
   .cta .cta__spring {
     display: none;
   }
+}
+
+.footer {
+  padding-block-end: 64px;
+}
+@media (min-width: 43.75em) {
+  .footer {
+    padding-block-end: 120px;
+  }
+}
+.footer .footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 58px;
+}
+.footer .footer__logo:hover img {
+  opacity: 0.8;
+}
+.footer .footer__logo:hover img {
+  transition: opacity 250ms ease-in-out;
+}
+.footer .footer__links {
+  display: flex;
+  gap: 28px;
+}
+.footer .footer__link:hover path {
+  fill: var(--color-dk-purple);
+}
+.footer .footer__icon path {
+  transition: fill 250ms ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */
